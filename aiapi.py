@@ -1,7 +1,7 @@
 from tkinter import*
 from PIL import Image, ImageTk
 import requests
-from playsound import*
+from playsound import playsound
 
 def get_duck_image():
 
