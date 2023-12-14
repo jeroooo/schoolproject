@@ -16,7 +16,7 @@ from pygame import mixer
 mixer.init()
 
 #Load audio file
-mixer.music.load('song.mp3')
+mixer.music.load('1.mp3')
 
 print("music started playing....")
 
