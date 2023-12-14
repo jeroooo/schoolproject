@@ -1,9 +1,30 @@
 #py -m pip install pillow u commnad promptu
-#py -m pip install playsound u commnad promptu
+#py -m pip install pygame u commnad promptu
 from tkinter import*
 from PIL import Image, ImageTk
 import requests
 from playsound import playsound
+from pygame import mixer
+
+
+
+
+
+
+
+#Instantiate mixer
+mixer.init()
+
+#Load audio file
+mixer.music.load('song.mp3')
+
+print("music started playing....")
+
+#Set preferred volume
+mixer.music.set_volume(0.2)
+
+#Play the music
+mixer.music.play()
 
 def get_duck_image():
 
@@ -17,7 +38,7 @@ def get_duck_image():
     label.config(image=photo)
     label.image = photo
     b.config(text='STISNI ZA JOŠ JEDNU')
-    playsound('1.mp3')
+    mixer.music.play()
 
 p = Tk()
 p.title("Patke patke patkice")
