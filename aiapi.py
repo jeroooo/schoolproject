@@ -1,3 +1,5 @@
+#py -m pip install pillow u commnad promptu
+#py -m pip install playsound u commnad promptu
 from tkinter import*
 from PIL import Image, ImageTk
 import requests
